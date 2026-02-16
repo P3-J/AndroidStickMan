@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dla7goqs4c62a"]
+
+[ext_resource type="Script" uid="uid://bsoij3mcadtwe" path="res://scenes/Grindspot.cs" id="1_n8nek"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ala3j"]
+size = Vector3(2.808075, 2.307495, 25.55909)
+
+[node name="grindspot" type="Area3D" unique_id=2020666152]
+script = ExtResource("1_n8nek")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=352704762]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.054107666, 0.65374756, -0.15600586)
+shape = SubResource("BoxShape3D_ala3j")

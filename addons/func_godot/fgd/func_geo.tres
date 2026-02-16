@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDSolidClass" format=3 uid="uid://b70vf4t5dc70t"]
+
+[ext_resource type="Script" uid="uid://bvti42m3t3cs5" path="res://addons/func_godot/src/fgd/func_godot_fgd_solid_class.gd" id="2_8o081"]
+[ext_resource type="Script" uid="uid://bsoij3mcadtwe" path="res://scenes/Grindspot.cs" id="3_bp8pb"]
+
+[resource]
+script = ExtResource("2_8o081")
+build_visuals = false
+use_in_baked_light = false
+script_class = ExtResource("3_bp8pb")
+classname = "func_geo"
+description = "Static collidable geometry. Builds a StaticBody3D with a MeshInstance3D, a single concave CollisionShape3D, and an OccluderInstance3D."
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1)
+}
+node_class = "Area3D"

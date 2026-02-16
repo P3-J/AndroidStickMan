@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://bpg6gl6vckpxp"
+path="res://.godot/imported/seg_2_3600.map-4267e335720248e8989b8b52fb4394e6.tres"
+
+[deps]
+
+source_file="res://mappies/seg_2_3600.map"
+dest_files=["res://.godot/imported/seg_2_3600.map-4267e335720248e8989b8b52fb4394e6.tres"]
+
+[params]
+

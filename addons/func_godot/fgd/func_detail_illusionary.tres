@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDSolidClass" format=3 uid="uid://ch3e0dix85uhb"]
+
+[ext_resource type="Script" uid="uid://bvti42m3t3cs5" path="res://addons/func_godot/src/fgd/func_godot_fgd_solid_class.gd" id="2_lhb87"]
+
+[resource]
+script = ExtResource("2_lhb87")
+classname = "func_detail_illusionary"
+description = "Static geometry with no collision. Builds a Node3D with a MeshInstance3D. Does not occlude other VisualInstance3D nodes."
+node_class = "StaticBody3D"

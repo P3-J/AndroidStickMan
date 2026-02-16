@@ -1,0 +1,114 @@
+// Game: Generic
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -16 -48 16 ) ( -16 -64 22 ) ( -16 -64 16 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( -16 -64 22 ) ( 16 -64 22 ) ( 16 -64 16 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( 16 -64 16 ) ( 16 -48 10 ) ( -16 -48 10 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( -16 -49.31506849315068 12.493150684931507 ) ( 16 -49.31506849315068 12.493150684931507 ) ( 16 -65.31506849315068 18.493150684931507 ) Vehicles/Materials/car_tire 0 -1.3150673 0 1 1
+( 16 -48 10 ) ( 16 -48 16 ) ( -16 -48 16 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( 16 -64 22 ) ( 16 -48 16 ) ( 16 -48 10 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+}
+// brush 1
+{
+( -16 -64 -16 ) ( -16 -63 -16 ) ( -16 -64 -15 ) Walls/Materials/siding_tan_01 0 0 0 1 1
+( -16 -48 16 ) ( 16 -48 144 ) ( 16 -48 16 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( -64 -64 10 ) ( -63 -64 10 ) ( -64 -63 10 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( 64 64 12 ) ( 64 65 12 ) ( 65 64 12 ) Vehicles/Materials/car_tire 0 0 0 1 1
+( -16 48 16 ) ( 16 48 16 ) ( 16 48 144 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( 16 64 16 ) ( 16 64 17 ) ( 16 65 16 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+}
+// brush 2
+{
+( -2 -36 8 ) ( -2 -35 8 ) ( -2 -36 9 ) newwithe/Facade001_1K-JPG_Color 0 0 0 1 1
+( -4 -36 8 ) ( -4 -36 9 ) ( -3 -36 8 ) newwithe/Facade001_1K-JPG_Color 0 0 0 1 1
+( -4 -36 4 ) ( -3 -36 4 ) ( -4 -35 4 ) newwithe/Facade001_1K-JPG_Color 0 0 0 1 1
+( 4 -32 10 ) ( 4 -31 10 ) ( 5 -32 10 ) newwithe/Facade001_1K-JPG_Color 0 0 0 1 1
+( 4 -32 10 ) ( 5 -32 10 ) ( 4 -32 11 ) newwithe/Facade001_1K-JPG_Color 0 0 0 1 1
+( 2 -32 10 ) ( 2 -32 11 ) ( 2 -31 10 ) newwithe/Facade001_1K-JPG_Color 0 0 0 1 1
+}
+// brush 3
+{
+( -10 -36 2 ) ( -10 -35 2 ) ( -10 -36 3 ) newwithe/Facade001_1K-JPG_Color 0 -6 0 1 1
+( -4 -36 2 ) ( -4 -36 3 ) ( -3 -36 2 ) newwithe/Facade001_1K-JPG_Color 0 -6 0 1 1
+( -4 -36 0 ) ( -3 -36 0 ) ( -4 -35 0 ) newwithe/Facade001_1K-JPG_Color 0 0 0 1 1
+( 4 -32 4 ) ( 4 -31 4 ) ( 5 -32 4 ) newwithe/Facade001_1K-JPG_Color 0 0 0 1 1
+( 4 -32 4 ) ( 5 -32 4 ) ( 4 -32 5 ) newwithe/Facade001_1K-JPG_Color 0 -6 0 1 1
+( 10 -32 4 ) ( 10 -32 5 ) ( 10 -31 4 ) newwithe/Facade001_1K-JPG_Color 0 -6 0 1 1
+}
+// brush 4
+{
+( -14 -36 2 ) ( -14 -35 2 ) ( -14 -36 3 ) Walls/Materials/siding_green_01 0 0 -45 1 1
+( -14 -38 2 ) ( -14 -38 3 ) ( -13 -38 2 ) Walls/Materials/siding_green_01 0 0 -45 1 1
+( -14 -36 -2 ) ( -13 -36 -2 ) ( -14 -35 -2 ) Walls/Materials/siding_green_01 0 0 -45 1 1
+( -10 -32 6 ) ( -10 -31 6 ) ( -9 -32 6 ) Walls/Materials/siding_green_01 0 0 -45 1 1
+( -10 -30 4 ) ( -9 -30 4 ) ( -10 -30 5 ) Walls/Materials/siding_green_01 0 0 -45 1 1
+( -10 -32 4 ) ( -10 -32 5 ) ( -10 -31 4 ) Walls/Materials/siding_green_01 0 0 -45 1 1
+}
+// brush 5
+{
+( 10 -36 2 ) ( 10 -35 2 ) ( 10 -36 3 ) Walls/Materials/siding_green_01 0 0 315 1 1
+( 10 -38 2 ) ( 10 -38 3 ) ( 11 -38 2 ) Walls/Materials/siding_green_01 -16.97056 16.97056 315 1 1
+( 10 -36 -2 ) ( 11 -36 -2 ) ( 10 -35 -2 ) Walls/Materials/siding_green_01 -16.970564 16.970564 315 1 1
+( 14 -32 6 ) ( 14 -31 6 ) ( 15 -32 6 ) Walls/Materials/siding_green_01 -16.970564 16.970564 315 1 1
+( 14 -30 4 ) ( 15 -30 4 ) ( 14 -30 5 ) Walls/Materials/siding_green_01 -16.97056 16.97056 315 1 1
+( 14 -32 4 ) ( 14 -32 5 ) ( 14 -31 4 ) Walls/Materials/siding_green_01 0 0 315 1 1
+}
+// brush 6
+{
+( -10 28 2 ) ( -10 29 2 ) ( -10 28 3 ) newwithe/Facade001_1K-JPG_Color -64 -6 0 1 1
+( -4 28 2 ) ( -4 28 3 ) ( -3 28 2 ) newwithe/Facade001_1K-JPG_Color 0 -6 0 1 1
+( -4 28 0 ) ( -3 28 0 ) ( -4 29 0 ) newwithe/Facade001_1K-JPG_Color 0 64 0 1 1
+( 4 32 4 ) ( 4 33 4 ) ( 5 32 4 ) newwithe/Facade001_1K-JPG_Color 0 64 0 1 1
+( 4 32 4 ) ( 5 32 4 ) ( 4 32 5 ) newwithe/Facade001_1K-JPG_Color 0 -6 0 1 1
+( 10 32 4 ) ( 10 32 5 ) ( 10 33 4 ) newwithe/Facade001_1K-JPG_Color -64 -6 0 1 1
+}
+// brush 7
+{
+( -2 28 8 ) ( -2 29 8 ) ( -2 28 9 ) newwithe/Facade001_1K-JPG_Color -64 0 0 1 1
+( -4 28 8 ) ( -4 28 9 ) ( -3 28 8 ) newwithe/Facade001_1K-JPG_Color 0 0 0 1 1
+( -4 28 4 ) ( -3 28 4 ) ( -4 29 4 ) newwithe/Facade001_1K-JPG_Color 0 64 0 1 1
+( 4 32 10 ) ( 4 33 10 ) ( 5 32 10 ) newwithe/Facade001_1K-JPG_Color 0 64 0 1 1
+( 4 32 10 ) ( 5 32 10 ) ( 4 32 11 ) newwithe/Facade001_1K-JPG_Color 0 0 0 1 1
+( 2 32 10 ) ( 2 32 11 ) ( 2 33 10 ) newwithe/Facade001_1K-JPG_Color -64 0 0 1 1
+}
+// brush 8
+{
+( 10 28 2 ) ( 10 29 2 ) ( 10 28 3 ) Walls/Materials/siding_green_01 -45.254845 45.254845 315 1 1
+( 10 26 2 ) ( 10 26 3 ) ( 11 26 2 ) Walls/Materials/siding_green_01 -16.970562 16.970562 315 1 1
+( 10 28 -2 ) ( 11 28 -2 ) ( 10 29 -2 ) Walls/Materials/siding_green_01 28.28427 -1.7746105 315 1 1
+( 14 32 6 ) ( 14 33 6 ) ( 15 32 6 ) Walls/Materials/siding_green_01 28.28427 -1.7746105 315 1 1
+( 14 34 4 ) ( 15 34 4 ) ( 14 34 5 ) Walls/Materials/siding_green_01 -16.970562 16.970562 315 1 1
+( 14 32 4 ) ( 14 32 5 ) ( 14 33 4 ) Walls/Materials/siding_green_01 -45.254845 45.254845 315 1 1
+}
+// brush 9
+{
+( -14 28 2 ) ( -14 29 2 ) ( -14 28 3 ) Walls/Materials/siding_green_01 -45.254845 45.254845 315 1 1
+( -14 26 2 ) ( -14 26 3 ) ( -13 26 2 ) Walls/Materials/siding_green_01 0 0 315 1 1
+( -14 28 -2 ) ( -13 28 -2 ) ( -14 29 -2 ) Walls/Materials/siding_green_01 45.254845 -18.745173 315 1 1
+( -10 32 6 ) ( -10 33 6 ) ( -9 32 6 ) Walls/Materials/siding_green_01 45.254845 -18.745173 315 1 1
+( -10 34 4 ) ( -9 34 4 ) ( -10 34 5 ) Walls/Materials/siding_green_01 0 0 315 1 1
+( -10 32 4 ) ( -10 32 5 ) ( -10 33 4 ) Walls/Materials/siding_green_01 -45.254845 45.254845 315 1 1
+}
+// brush 10
+{
+( 16 58 15.750000000000002 ) ( 16 58 14 ) ( 9 64 14 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( -16 65.31506849315068 18.493150684931507 ) ( 16 65.31506849315068 18.493150684931507 ) ( 16 49.31506849315068 12.493150684931507 ) Vehicles/Materials/car_tire 0 1.3150673 0 1 1
+( 16 48 10 ) ( 16 64 16 ) ( -16 64 16 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( 16 64 16 ) ( 16 64 22 ) ( -16 64 22 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( 16 48 16 ) ( 16 64 22 ) ( 16 64 16 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+}
+// brush 11
+{
+( -16 64 22 ) ( -16 48 16 ) ( -16 48 10 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( -16 48 16 ) ( 16 48 16 ) ( 16 48 10 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( -16 65.31506849315068 18.493150684931507 ) ( 16 65.31506849315068 18.493150684931507 ) ( 16 49.31506849315068 12.493150684931507 ) Vehicles/Materials/car_tire 0 1.3150673 0 1 1
+( 16 48 10 ) ( 16 64 16 ) ( -16 64 16 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( 16 64 16 ) ( 16 64 22 ) ( -16 64 22 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( 16 58 15.750000000000002 ) ( 9 64 14 ) ( 16 58 14 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+( 16 48 16 ) ( 16 64 22 ) ( 16 64 16 ) Walls/Materials/siding_metal_red_01 0 0 0 1 1
+}
+}

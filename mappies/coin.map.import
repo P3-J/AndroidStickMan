@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://buoqpmflu7yid"
+path="res://.godot/imported/coin.map-7c2432191bcef59586fde615e4c8a2b4.tres"
+
+[deps]
+
+source_file="res://mappies/coin.map"
+dest_files=["res://.godot/imported/coin.map-7c2432191bcef59586fde615e4c8a2b4.tres"]
+
+[params]
+

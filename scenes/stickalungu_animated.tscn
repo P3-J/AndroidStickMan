@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://wmkdbvyfjrlf"]
+
+[ext_resource type="PackedScene" uid="uid://cwvqarm4xklri" path="res://asssets/Stickalungu_Animated.fbx" id="1_80x38"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_80x38"]
+shading_mode = 0
+albedo_color = Color(0.35652012, 0.6455806, 0, 1)
+
+[node name="Stickalungu_Animated" unique_id=144318542 instance=ExtResource("1_80x38")]
+
+[node name="Sphere_001" parent="." index="0" unique_id=903672263]
+unique_name_in_owner = true
+transform = Transform3D(0.9999999, -4.377217e-09, 3.725291e-10, 4.3772164e-09, 1, -1.582033e-07, -3.7252837e-10, 1.582033e-07, 1, 0.006715834, -0.62761253, 2.941433e-09)
+surface_material_override/0 = SubResource("StandardMaterial3D_80x38")

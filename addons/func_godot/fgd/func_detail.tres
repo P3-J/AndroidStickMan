@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDSolidClass" format=3 uid="uid://cxy7jnh6d7msn"]
+
+[ext_resource type="Script" uid="uid://bvti42m3t3cs5" path="res://addons/func_godot/src/fgd/func_godot_fgd_solid_class.gd" id="1_0fsmp"]
+[ext_resource type="Resource" uid="uid://nayxb8n7see2" path="res://addons/func_godot/fgd/phong_base.tres" id="1_c3bns"]
+[ext_resource type="Script" uid="uid://c4vn3o2v1ti4y" path="res://scenes/laserarea.cs" id="3_c03gr"]
+
+[resource]
+script = ExtResource("1_0fsmp")
+collision_shape_type = 2
+script_class = ExtResource("3_c03gr")
+classname = "func_detail"
+description = "Static collidable geometry. Builds a StaticBody3D with a MeshInstance3D and a single concave CollisionShape3D. Does not occlude other VisualInstance3D nodes."
+base_classes = Array[Resource]([ExtResource("1_c3bns")])
+meta_properties = {
+"color": Color(0.8, 0.8, 0.8, 1)
+}
+node_class = "Area3D"

@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://cdr5bkvcenky4"
+path="res://.godot/imported/board.map-4fc4c5d2715e38b94294cf549643ff68.tres"
+
+[deps]
+
+source_file="res://mappies/board.map"
+dest_files=["res://.godot/imported/board.map-4fc4c5d2715e38b94294cf549643ff68.tres"]
+
+[params]
+

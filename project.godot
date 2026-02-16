@@ -1,0 +1,75 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[accessibility]
+
+general/updates_per_second=90
+
+[application]
+
+config/name="andordroid"
+run/main_scene="uid://ctgdqewao3eq1"
+config/features=PackedStringArray("4.6", "C#", "Mobile")
+run/max_fps=60
+config/icon="res://icon.svg"
+
+[autoload]
+
+Globals="*uid://c8jmm22tci6gj"
+
+[display]
+
+window/size/viewport_width=750
+window/size/viewport_height=1200
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+window/handheld/orientation=5
+
+[dotnet]
+
+project/assembly_name="andordroid"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/func_godot/plugin.cfg")
+
+[filesystem]
+
+import/blender/enabled=false
+
+[global_group]
+
+player=""
+
+[input]
+
+left_touch={
+"deadzone": 0.2,
+"events": []
+}
+right_touch={
+"deadzone": 0.2,
+"events": []
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
+environment/updates_per_second=60

@@ -1,0 +1,46 @@
+Adding file system path "D:\\reps\\newtrench\\defaults\\assets"
+Adding file system path "D:\\reps\\andordroid\\"
+Loading document from D:\reps\andordroid\mappies\seg_1_2400.map
+Found 0 shaders
+Loaded entity definition file FuncGodot.fgd
+Found 0 shaders
+Loaded "D:\\reps\\andordroid\\mappies\\seg_1_2400.map" in 236ms
+Could not load texture 'textures\rock_wall_13_disp_1k.png': Unsupported pixel format
+Saved "D:\\reps\\andordroid\\mappies\\seg_1_2400.map" in 11ms
+Saved "D:\\reps\\andordroid\\mappies\\seg_1_2400.map" in 10ms
+Saved "D:\\reps\\andordroid\\mappies\\seg_1_2400.map" in 11ms
+Adding file system path "D:\\reps\\newtrench\\defaults\\assets"
+Adding file system path "D:\\reps\\andordroid\\"
+Loading document from D:\reps\andordroid\mappies\seg_2_3600.map
+Found 0 shaders
+Loaded entity definition file FuncGodot.fgd
+Found 0 shaders
+Loaded "D:\\reps\\andordroid\\mappies\\seg_2_3600.map" in 65ms
+Could not load texture 'textures\rock_wall_13_disp_1k.png': Unsupported pixel format
+Could not resize brush: Brush is empty
+Could not resize brush: Brush is empty
+Could not resize brush: Brush is empty
+Could not resize brush: Brush is empty
+Could not resize brush: Brush is empty
+Could not resize brush: Brush is empty
+Could not resize brush: Brush is empty
+Saved "D:\\reps\\andordroid\\mappies\\seg_2_3600.map" in 10ms
+Couldn't parse as Standard entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Standard brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Saved "D:\\reps\\andordroid\\mappies\\seg_2_3600.map" in 10ms
+Saved "D:\\reps\\andordroid\\mappies\\seg_2_3600.map" in 13ms
+Couldn't parse as Standard entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Standard brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Saved "D:\\reps\\andordroid\\mappies\\seg_2_3600.map" in 10ms
+Saved "D:\\reps\\andordroid\\mappies\\seg_2_3600.map" in 10ms
+Adding file system path "D:\\reps\\newtrench\\defaults\\assets"
+Adding file system path "D:\\reps\\andordroid\\"
+Loading document from D:\reps\andordroid\mappies\seg_1_2400.map
+Found 0 shaders
+Loaded entity definition file FuncGodot.fgd
+Found 0 shaders
+Loaded "D:\\reps\\andordroid\\mappies\\seg_1_2400.map" in 63ms
