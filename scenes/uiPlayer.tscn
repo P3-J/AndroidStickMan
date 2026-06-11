@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://bdibvjm6mv5jw"]
+
+[ext_resource type="Script" uid="uid://2j3j4d1nsmup" path="res://scenes/UiPlayer.cs" id="1_0ln08"]
+[ext_resource type="Script" uid="uid://cdlfc6ynoivkf" path="res://scenes/LeftZone.cs" id="1_wk4te"]
+[ext_resource type="Script" uid="uid://bfr1as4kofpkg" path="res://scenes/RightZone.cs" id="2_0ln08"]
+[ext_resource type="FontFile" uid="uid://ccckdjei3ru31" path="res://asssets/fonts/PixelOperatorMono-Bold.ttf" id="3_y0c1u"]
+
+[node name="uiPlayer" type="CanvasLayer" unique_id=277733275 node_paths=PackedStringArray("Distancelabel", "goldLabel")]
+script = ExtResource("1_0ln08")
+Distancelabel = NodePath("UIRoot/distanceLabel")
+goldLabel = NodePath("UIRoot/goldLabel")
+
+[node name="UIRoot" type="Control" parent="." unique_id=386226476]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="leftZone" type="Control" parent="UIRoot" unique_id=230365682]
+layout_mode = 1
+anchor_right = 0.33333334
+anchor_bottom = 1.0
+offset_right = 28.0
+grow_vertical = 2
+script = ExtResource("1_wk4te")
+metadata/_edit_use_anchors_ = true
+
+[node name="rightZone" type="Control" parent="UIRoot" unique_id=1332041412]
+layout_mode = 1
+anchor_left = 0.544
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -2.0
+grow_horizontal = 0
+grow_vertical = 2
+script = ExtResource("2_0ln08")
+metadata/_edit_use_anchors_ = true
+
+[node name="restart" type="Button" parent="UIRoot" unique_id=232157324]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.033333335
+anchor_top = 0.075
+anchor_right = 0.11640552
+anchor_bottom = 0.12627956
+offset_right = 0.25362396
+offset_bottom = -0.40946198
+rotation = 0.007875473
+theme_override_font_sizes/font_size = 5
+text = "R"
+metadata/_edit_use_anchors_ = true
+
+[node name="exitmenu" type="Button" parent="UIRoot" unique_id=1333611438]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.032
+anchor_top = 0.006666667
+anchor_right = 0.08888889
+anchor_bottom = 0.05
+theme_override_font_sizes/font_size = 5
+text = "M"
+metadata/_edit_use_anchors_ = true
+
+[node name="distanceLabel" type="Label" parent="UIRoot" unique_id=158666036]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.26666668
+anchor_top = 0.1
+anchor_right = 0.75600356
+anchor_bottom = 0.14859347
+offset_right = -0.0806427
+offset_bottom = 0.4500885
+grow_horizontal = 2
+rotation = -0.005112311
+theme_override_colors/font_color = Color(0.7176471, 1, 1, 0.56078434)
+theme_override_fonts/font = ExtResource("3_y0c1u")
+theme_override_font_sizes/font_size = 16
+text = "DISTANCE: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="goldLabel" type="Label" parent="UIRoot" unique_id=804665042]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.26666668
+anchor_top = 0.15
+anchor_right = 0.75600356
+anchor_bottom = 0.19859347
+offset_right = -0.0806427
+offset_bottom = 0.4500885
+grow_horizontal = 2
+rotation = -0.005112311
+theme_override_colors/font_color = Color(0.7176471, 1, 1, 0.56078434)
+theme_override_fonts/font = ExtResource("3_y0c1u")
+theme_override_font_sizes/font_size = 16
+text = "GOLD: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="UIRoot/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="UIRoot/exitmenu" to="." method="_on_exitmenu_pressed"]

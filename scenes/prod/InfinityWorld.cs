@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public partial class InfinityWorld : Node3D
 {
 
-    [Export] PackedScene Segment_1;
-    [Export] PackedScene Segment_2;
+    [Export] PackedScene[] segs;
+
     [Export] Node3D segmentParent;
     [Export] Player player;
 
@@ -23,14 +23,18 @@ public partial class InfinityWorld : Node3D
     public override void _Ready()
     {
         base._Ready();
-        segments = [
-            Segment_1,
-            Segment_2
-        ];
+
+        segments = [];
+        foreach (PackedScene seg in segs)
+        {
+            segments.Add(seg);
+        }
+
         instancedSegments = [];
 
         rand = new Random();
 
+        GenerateSegement(1);
         GenerateSegement(1);
         GenerateSegement(1);
 
@@ -45,7 +49,7 @@ public partial class InfinityWorld : Node3D
         for (int i = instancedSegments.Count - 1; i >= 0; i--)
         {
             SegmentScript seg = instancedSegments[i];
-            if (playerZ > seg.endingPosZ)
+            if (playerZ > seg.endingPosZ + 25)
             {
                 clearCount++;
                 instancedSegments.RemoveAt(i);

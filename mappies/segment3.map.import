@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://x6cpytjdtudo"
+path="res://.godot/imported/segment3.map-52e6843ec259e3ec493f1d77c6d6186e.tres"
+
+[deps]
+
+source_file="res://mappies/segment3.map"
+dest_files=["res://.godot/imported/segment3.map-52e6843ec259e3ec493f1d77c6d6186e.tres"]
+
+[params]
+

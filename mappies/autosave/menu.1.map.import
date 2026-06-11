@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://dx2eyiccesu0r"
+path="res://.godot/imported/menu.1.map-ea5e321d43f029d2bdee1b8b4224551d.tres"
+
+[deps]
+
+source_file="res://mappies/autosave/menu.1.map"
+dest_files=["res://.godot/imported/menu.1.map-ea5e321d43f029d2bdee1b8b4224551d.tres"]
+
+[params]
+

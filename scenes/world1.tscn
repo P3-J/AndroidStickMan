@@ -2,12 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cn46hnbpnmitv" path="res://addons/func_godot/src/map/func_godot_map.gd" id="1_rli88"]
 [ext_resource type="Resource" uid="uid://bkhxcqsquw1yg" path="res://addons/func_godot/func_godot_default_map_settings.tres" id="2_62ogi"]
-[ext_resource type="Material" uid="uid://bja0po12v6mdh" path="res://textures/Walls/Materials/wall_stucco_05.tres" id="3_1msdb"]
-[ext_resource type="Material" uid="uid://camedtjgt8k6u" path="res://textures/default_texture.tres" id="4_cqo20"]
-[ext_resource type="Material" uid="uid://1b6uu82l6ttt" path="res://textures/128x128/Tile/Tile_07-128x128.tres" id="5_f4ck5"]
 [ext_resource type="PackedScene" uid="uid://cfen7hrky3y3d" path="res://scenes/coin.tscn" id="6_wnwuj"]
 [ext_resource type="PackedScene" uid="uid://c8edr5ew0a3nb" path="res://scenes/player.tscn" id="7_bu1hf"]
-[ext_resource type="Material" uid="uid://2ciswxslmpp4" path="res://textures/F1/CNVW1_5.tres" id="7_cqo20"]
 [ext_resource type="Script" uid="uid://ddrv24ecgtnp" path="res://scenes/followcam.cs" id="8_ulrur"]
 [ext_resource type="Script" uid="uid://bsoij3mcadtwe" path="res://scenes/Grindspot.cs" id="9_1msdb"]
 [ext_resource type="PackedScene" uid="uid://doe1jycdmqpug" path="res://scenes/winningarea.tscn" id="11_cqo20"]
@@ -19,7 +15,6 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 87,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcABAAHAAgABAAIAAkACgALAAwACgAMAA0ACgANAA4ADwAQABEADwARABIAEwAUABUAEwAVABYAEwAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AHAAfACAAIQAiACMAIQAjACQAJQAmACcAJQAnACgAKQAqACsAKQArACwALQAuAC8ALQAvADAAMQAyADMAMQAzADQA"),
-"material": ExtResource("3_1msdb"),
 "name": "Walls/Materials/wall_stucco_05",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -31,7 +26,6 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 324,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8ADAAPABAADAAQABEADAARABIADAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AHAAfACAAHAAgACEAHAAhACIAHAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8AMAAxADIAMAAyADMANAA1ADYANAA2ADcAOAA5ADoAOAA6ADsAPAA9AD4APAA+AD8APAA/AEAAPABAAEEAPABBAEIAPABCAEMARABFAEYARABGAEcASABJAEoASABKAEsATABNAE4ATABOAE8ATABPAFAATABQAFEATABRAFIATABSAFMAVABVAFYAVABWAFcAWABZAFoAWABaAFsAXABdAF4AXABeAF8AYABhAGIAYABiAGMAZABlAGYAZABmAGcAaABpAGoAaABqAGsAbABtAG4AbABuAG8AcABxAHIAcAByAHMAdAB1AHYAdAB2AHcAeAB5AHoAeAB6AHsAeAB7AHwAeAB8AH0AfgB/AIAAgQCCAIMAgQCDAIQAhQCGAIcAhQCHAIgAhQCIAIkAhQCJAIoAiwCMAI0AiwCNAI4AjwCQAJEAjwCRAJIAjwCSAJMAjwCTAJQAlQCWAJcAmACZAJoAmACaAJsAnACdAJ4AnACeAJ8AnACfAKAAnACgAKEAnAChAKIAowCkAKUApgCnAKgApgCoAKkApgCpAKoApgCqAKsArACtAK4ArACuAK8AsACxALIAsACyALMAsACzALQAsAC0ALUAtgC3ALgAtgC4ALkAugC7ALwAvQC+AL8A"),
-"material": ExtResource("4_cqo20"),
 "name": "default_texture",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -43,7 +37,6 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAAACAAMA"),
-"material": ExtResource("5_f4ck5"),
 "name": "128x128/Tile/Tile_07-128x128",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -55,7 +48,6 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcA"),
-"material": ExtResource("7_cqo20"),
 "name": "F1/CNVW1_5",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -179,9 +171,8 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -70.
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -75.625, 2.875, 13.8125)
 
 [node name="player" parent="." unique_id=864041799 instance=ExtResource("7_bu1hf")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.842913, 1.2387958, 14.436983)
+transform = Transform3D(0.021972036, 0, -0.9997586, 0, 1, 0, 0.9997586, 0, 0.021972036, -12.842913, 1.2387958, 6.6476183)
 SideSpeed = 11.0
-SwipeThreshold = 30.0
 
 [node name="camPoint2" type="Marker3D" parent="player" unique_id=1699579796]
 transform = Transform3D(0.009079641, 0.48829177, -0.8726329, 0.006307694, 0.8726239, 0.48835215, 0.9999389, -0.009938364, 0.004843115, -1.951479, 4.391538, 0.051670074)

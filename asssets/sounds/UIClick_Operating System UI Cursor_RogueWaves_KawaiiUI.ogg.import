@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://khiagd24gxr8"
+path="res://.godot/imported/UIClick_Operating System UI Cursor_RogueWaves_KawaiiUI.ogg-06fb592a239c16a7f268af59d3035c9f.oggvorbisstr"
+
+[deps]
+
+source_file="res://asssets/sounds/UIClick_Operating System UI Cursor_RogueWaves_KawaiiUI.ogg"
+dest_files=["res://.godot/imported/UIClick_Operating System UI Cursor_RogueWaves_KawaiiUI.ogg-06fb592a239c16a7f268af59d3035c9f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

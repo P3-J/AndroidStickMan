@@ -1,0 +1,26 @@
+[gd_scene format=4 uid="uid://dl485wvbyyvq2"]
+
+[ext_resource type="Texture2D" uid="uid://bk6eqhjr2gx7h" path="res://textures/128x128/Dirt/Dirt_17-128x128.png" id="1_kvwyg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3382x"]
+shading_mode = 0
+albedo_texture = ExtResource("1_kvwyg")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_nqopl"]
+_surfaces = [{
+"aabb": AABB(-1, -0.3125, -1, 2, 0.625, 2),
+"attribute_data": PackedByteArray("CADAPgAA4L4IAKA+//+fvgAAED///5+++P//PgAA4L4BAOC+AAAQvwEAoL4AABC/AACAvv//374BAAC////fvgEAAL8AABzAAQAAvwEADMAAAIC+AQAMwAAAgL4AABzAAQDgvv//F8ABAKC+//8XwAEAoL4BABDAAQDgvgEAEMABAOC+AAAUwAEAAL8AAAzAAACAvgAADMABAKC+AAAUwAEACUAAANi+//8QQAAA2L4AABVA//+XvgEABUD//5e+AAAEQAAAQL4AAARAAAAgvgAAJEAAACC+AAAkQAAAQL4AACC/AABAvgAAAL4AAEC+AAAAvgAAIL4AACC/AAAgvgAAIL8AACTAAAAgvwAABMAAAAC+AAAEwAAAAL4AACTAAAAgvwAAJMAAAAC+AAAkwAAAAL4AAATAAAAgvwAABMAAACC/AABAvgAAIL8AACC+AAAAvgAAIL4AAAC+AABAvgAABEAAAEC+AAAkQAAAQL4AACRAAAAgvgAABEAAACC+"),
+"format": 34359742487,
+"index_count": 72,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8A"),
+"material": SubResource("StandardMaterial3D_3382x"),
+"name": "128x128/Dirt/Dirt_17-128x128",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("wP9/vgAAoD4EAIC+4P//vggAQL4EAAC/AAAAPwgAQL4EAAC/wP9/PgAAoD4EAIC+wP9/vgAAoD4EAIC+wP9/vgAAoD74/38+4P//vggAQL4AAAA/4P//vggAQL4EAAC/AAAAPwgAQL4EAAC/4P//vggAQL4EAAC/4P//vggAQL4AAAA/AAAAPwgAQL4AAAA/wP9/PgAAoD4EAIC+wP9/PgAAoD74/38+wP9/vgAAoD74/38+wP9/vgAAoD4EAIC+wP9/PgAAoD4EAIC+AAAAPwgAQL4EAAC/AAAAPwgAQL4AAAA/wP9/PgAAoD74/38+wP9/vgAAoD74/38+wP9/PgAAoD74/38+AAAAPwgAQL4AAAA/4P//vggAQL4AAAA/AACAvwAAQL4AAIC/AACAvwAAoL4AAIC/AACAPwAAoL4AAIC/AACAPwAAQL4AAIC/AACAvwAAQL4AAIC/AACAvwAAQL4AAIA/AACAvwAAoL4AAIA/AACAvwAAoL4AAIC/AACAPwAAoL4AAIC/AACAvwAAoL4AAIC/AACAvwAAoL4AAIA/AACAPwAAoL4AAIA/AACAPwAAQL4AAIC/AACAPwAAQL4AAIA/AACAvwAAQL4AAIA/AACAvwAAQL4AAIC/AACAPwAAQL4AAIC/AACAPwAAoL4AAIC/AACAPwAAoL4AAIA/AACAPwAAQL4AAIA/AACAvwAAQL4AAIA/AACAPwAAQL4AAIA/AACAPwAAoL4AAIA/AACAvwAAoL4AAIA/VNX//////z9U1f//////P1TV//////8/VNX//////z+qKqqq/3//v6oqqqr/f/+/qiqqqv9//7+qKqqq/3//v/9/AAD/f/8//38AAP9//z//fwAA/3//P/9/AAD/f/8//3////9//7//f////3//v/9/////f/+//3////9//79U1aqq/3//P1TVqqr/f/8/VNWqqv9//z9U1aqq/3//P/9/qqr///+//3+qqv///7//f6qq////v/9/qqr///+//////////z//////////P/////////8//////////z8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9/AAD/f/8//38AAP9//z//fwAA/3//P/9/AAD/f/8//3////9//7//f////3//v/9/////f/+//3////9//7////9//3//P////3//f/8/////f/9//z////9//3//P/9//3////+//3//f////7//f/9/////v/9//3////+/")
+}]
+
+[node name="strawhat" type="MeshInstance3D" unique_id=1691852232]
+transform = Transform3D(0.3, -3.7252903e-09, -1.4901161e-08, 7.450581e-09, 0.30000013, 0, -1.4901161e-08, 1.071021e-08, 0.3, 0, 0, 0)
+mesh = SubResource("ArrayMesh_nqopl")

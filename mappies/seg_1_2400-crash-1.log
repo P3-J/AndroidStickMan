@@ -1,0 +1,75 @@
+Adding file system path "D:\\reps\\newtrench\\defaults\\assets"
+Adding file system path "D:\\reps\\andordroid\\"
+Loading document from D:\reps\andordroid\mappies\seg_2_3600.map
+Found 0 shaders
+Loaded entity definition file FuncGodot.fgd
+Found 0 shaders
+Loaded "D:\\reps\\andordroid\\mappies\\seg_2_3600.map" in 59ms
+Could not load texture 'textures\rock_wall_13_disp_1k.png': Unsupported pixel format
+Couldn't parse as Standard entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Standard brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknowSaved "D:\\reps\\andordroid\\mappies\\seg_1_2400.map" in 13ms
+Adding file system path "D:\\reps\\newtrench\\defaults\\assets"
+Adding file system path "D:\\reps\\andordroid\\"
+Loading document from D:\reps\andordroid\mappies\segment3.map
+Found 0 shaders
+Loaded entity definition file FuncGodot.fgd
+Found 0 shaders
+Loaded "D:\\reps\\andordroid\\mappies\\segment3.map" in 57ms
+Could not load texture 'textures\rock_wall_13_disp_1k.png': Unsupported pixel format
+Created autosave backup at "D:\\reps\\andordroid\\mappies\\autosave\\segment3.4.map"
+Could not resize brush: Brush has invalid face
+Could not clip brush: Brush is empty
+Could not clip brush: Brush is empty
+Could not clip brush: Brush is empty
+Failed to load entity model 'Coin.glb': res:\\models\Coin.glb not found
+Saved "D:\\reps\\andordroid\\mappies\\segment3.map" in 10ms
+Created autosave backup at "D:\\reps\\andordroid\\mappies\\autosave\\segment3.5.map"
+Saved "D:\\reps\\andordroid\\mappies\\segment3.map" in 13ms
+Adding file system path "D:\\reps\\newtrench\\defaults\\assets"
+Adding file system path "D:\\reps\\andordroid\\"
+Loading document from D:\reps\andordroid\mappies\seg_1_2400.map
+Found 0 shaders
+Loaded entity definition file FuncGodot.fgd
+Found 0 shaders
+Loaded "D:\\reps\\andordroid\\mappies\\seg_1_2400.map" in 59ms
+Could not load texture 'textures\rock_wall_13_disp_1k.png': Unsupported pixel format
+Failed to load entity model 'Coin.glb': res:\\models\Coin.glb not foundSaved "D:\\reps\\andordroid\\mappies\\seg_2_3600.map" in 14ms
+Couldn't parse as Standard entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Standard brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Standard entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Standard brushes: At line 1, columnSaved "D:\\reps\\andordroid\\mappies\\seg_1_2400.map" in 13ms
+Adding file system path "D:\\reps\\newtrench\\defaults\\assets"
+Adding file system path "D:\\reps\\andordroid\\"
+Loading document from D:\reps\andordroid\mappies\segment3.map
+Found 0 shaders
+Loaded entity definition file FuncGodot.fgd
+Found 0 shaders
+Loaded "D:\\reps\\andordroid\\mappies\\segment3.map" in 58ms
+Failed to load entity model 'Coin.glb': res:\\models\Coin.glb not found
+Could not load texture 'textures\rock_wall_13_disp_1k.png': Unsupported pixel format
+Could not extrude inwards: Front brush is empty
+Created autosave backup at "D:\\reps\\andordroid\\mappies\\autosave\\segment3.6.map"
+Saved "D:\\reps\\andordroid\\mappies\\segment3.map" in 6ms
+Couldn't parse as Standard entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Standard brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Standard entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Standard brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Standard entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Standard brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve entities: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Couldn't parse as Valve brushes: At line 1, column 1: Expected '{' or end of file, but got '(' (raw data: '(') (unknown location)
+Saved "D:\\reps\\andordroid\\mappies\\segment3.map" in 10ms
+Saved "D:\\reps\\andordroid\\mappies\\segment3.map" in 10ms
+Adding file system path "D:\\reps\\newtrench\\defaults\\assets"
+Adding file system path "D:\\reps\\andordroid\\"
+Loading document from D:\reps\andordroid\mappies\seg_1_2400.map
+Found 0 shaders
+Loaded entity definition file FuncGodot.fgd
+Found 0 shaders
+Loaded "D:\\reps\\andordroid\\mappies\\seg_1_2400.map" in 65ms

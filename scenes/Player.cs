@@ -5,14 +5,16 @@ using System.Data;
 public partial class Player : CharacterBody3D
 {
 
-	[Export] Node3D stickRoot;
 	[Export] Node3D modelroot;
 	[Export] AnimationPlayer boardAnim;
 	[Export] AudioStreamPlayer coinSound;
-	[Export] AnimationPlayer stickmananim;
-	[Export] Label distancelabel;
+	[Export] AudioStreamPlayer grindSound;
+	[Export] AudioStreamPlayer rollingSound;
+	[Export] AudioStreamPlayer ollieSound;
+	[Export] StickRoot stickRoot;
+	[Export] UiPlayer UI;
 	Globals glob;
-	bool firstTouchOff = false;
+	public bool firstTouchOff = false;
 	bool inEndZone = false;
 	private Vector2 _touchStartPos;
 	private bool _canSwipe = false;
@@ -31,6 +33,8 @@ public partial class Player : CharacterBody3D
 		glob.Connect("ZoneEndTrigger", new Callable(this, nameof(ZoneEndReceive)));
 		glob.Connect("PlayerInDamageArea", new Callable(this, nameof(DamageAreaReceive)));
 
+		SetupEquipedItems();
+		SetupSpeedController();
 	}
 
 	public override void _Input(InputEvent @event)
@@ -72,7 +76,6 @@ public partial class Player : CharacterBody3D
 		else if (swipeDistance <= -MinBounceSwipeDistance)
 		{
 			ApplyBounce();
-			PlayFlipAnim(false);
 		}
 
 		_canSwipe = false;
@@ -85,18 +88,19 @@ public partial class Player : CharacterBody3D
 		return position.X > HorizontalMargin && position.X < screenWidth - HorizontalMargin;
 	}
 
+	private void SetupEquipedItems()
+	{
+		stickRoot.SpawnHatOnHead(glob.equipedItems["head"]);
+	}
+
 	private float CalculateOlliePower(float swipeDistance)
 	{
-		// Clamp swipe distance between min/max thresholds
 		float clampedDistance = Mathf.Clamp(swipeDistance, MinOllieSwipeDistance, MaxOllieSwipeDistance);
-
-		// Normalize to 0.0 (min power) → 1.0 (max power)
 		return Mathf.InverseLerp(MinOllieSwipeDistance, MaxOllieSwipeDistance, clampedDistance);
 	}
 
 	private void ApplyOllie(float power)
 	{
-		// Scale vertical velocity based on swipe power (0.0 → 1.0)
 		float verticalVelocity = Mathf.Lerp(MinOllieVelocity, MaxOllieVelocity, power);
 
 		Velocity = new Vector3(
@@ -106,11 +110,18 @@ public partial class Player : CharacterBody3D
 		);
 
 		PlayJumpAnim();
+		PlaySound("rolling", false);
+		PlaySound("ollie");
 	}
 
 	private void ApplyBounce()
 	{
-		Velocity = new Vector3(Velocity.X, -downwardsSpeed, Velocity.Z);
+		Velocity = new Vector3(
+			Velocity.X,
+			Velocity.Y - downwardsSpeed,
+			Velocity.Z
+		);
+
 	}
 
 
@@ -120,10 +131,16 @@ public partial class Player : CharacterBody3D
 		float pz = GlobalPosition.Z;
 		pz = Mathf.Round(pz);
 
-		if (pz > 0)
+		if (IsOnFloor())
 		{
-			distancelabel.Text = "DISTANCE: " + pz;
+			PlaySound("rolling");
+		} else
+		{
+			PlaySound("rolling", false);
 		}
+
+		if (pz > 0) UI.RefreshLabel("Distance", "DISTANCE: " + pz);
+		
 	}
 
 
@@ -146,21 +163,13 @@ public partial class Player : CharacterBody3D
 		}
 		else
 		{
-
+			if (!firstTouchOff) PlayFlipAnim(false);
 			if (firstTouchOff)
 			{
 				firstTouchOff = false;
-				stickmananim.PlayBackwards("jump");
+				stickRoot.PlayAnimBackWards("jump");
 			}
-
-			Vector3 floorNormal = GetFloorNormal();
-			// The steeper the slope downward, the more we pull down
-			// flat ground: floorNormal.Y = 1 → no extra pull
-			// steep downhill: floorNormal.Y < 1 → apply extra downward acceleration
-			float slopeFactor = Mathf.Clamp(1.0f - floorNormal.Y, 0.0f, 1.0f);
-			float extraDownhillPull = 30.0f;
-			velocity.Y -= extraDownhillPull * slopeFactor * (float)delta;
-
+			//PlayFlipAnim(false);
 		}
 
 
@@ -203,6 +212,34 @@ public partial class Player : CharacterBody3D
 		GroundNormalRotBody(delta);
 
 
+
+	}
+
+	private void PlaySound(string soundName, bool state = true)
+	{
+		
+		switch (soundName)
+		{
+			
+			case "ollie":
+                _soundManager(ollieSound, state);
+                break;
+			case "rolling":
+				_soundManager(rollingSound, state);
+				break;
+			case "grind":
+				_soundManager(grindSound, state);
+				break;
+
+		}
+
+	}
+
+
+	private void _soundManager(AudioStreamPlayer audio, bool state)
+	{
+		if (!audio.Playing && state) {audio.Play();}
+		else if (!state) {audio.Stop();}
 	}
 
 	private void GroundNormalRotBody(double delta)
@@ -224,7 +261,7 @@ public partial class Player : CharacterBody3D
 			24f * (float)delta
 			);
 			return;
-		}
+		} 
 
 		Vector3 up = GetFloorNormal().Normalized();
 
@@ -253,8 +290,7 @@ public partial class Player : CharacterBody3D
 
 	private void PlayJumpAnim()
 	{
-		if (stickmananim.IsPlaying()) stickmananim.Play("RESET");
-		stickmananim.Play("jump");
+		stickRoot.PlayJumpAnim();
 		firstTouchOff = true;
 	}
 
@@ -262,6 +298,8 @@ public partial class Player : CharacterBody3D
 	private void PickedUpCoinAction()
 	{
 		coinSound.Play();
+		glob.playerGold += 1;
+		UI.RefreshLabel("Gold", "Gold " + glob.playerGold.ToString());
 	}
 
 	private void PlayFlipAnim(bool state)
@@ -272,14 +310,14 @@ public partial class Player : CharacterBody3D
 
 		int flipValue = rand.Next(3);
 		boardAnim.SpeedScale = 1;
-		stickmananim.SpeedScale = 0.5f;
+		stickRoot.ChangeAnimSpeed(0.5f);
 
 		bool AnimPlaying = boardAnim.IsPlaying();
 
 		if (!state && boardAnim.IsPlaying())
 		{
 			boardAnim.SpeedScale = 2;
-			stickmananim.SpeedScale = 2;
+			stickRoot.ChangeAnimSpeed(3f);
 			return;
 		}
 
@@ -302,16 +340,12 @@ public partial class Player : CharacterBody3D
 
 	}
 
-	private void _on_button_pressed()
-	{
-		GetTree().ReloadCurrentScene();
-	}
-
 	private void GrindAreaReceive(bool state)
 	{
 		inGrindArea = state;
-		if (state == true) stickmananim.Play("stand");
-		GD.Print("got it wtf");
+		if (state == true) stickRoot.PlayAnim("stand");
+		
+		PlaySound("grind", state);
 	}
 	private void ZoneEndReceive()
 	{
@@ -322,17 +356,24 @@ public partial class Player : CharacterBody3D
 
 	private void DamageAreaReceive(bool state)
 	{
-		_on_button_pressed();
-
+		CallDeferred("reload_current_scene");
 	}
 
-
-
-	private void _on_exitmenu_pressed()
+	public void WallRideLean(string dir, bool state = true)
 	{
+		// no for now
+		return;
+		if (!state) {
+			stickRoot.StopAnim("wallRight");
+			boardAnim.Play("RESET");
+			return;
+		}
+		GD.Print("lean");
+		stickRoot.PlayAnim("wallRight");
+		boardAnim.Play("rightWallride");
 
-		GetTree().ChangeSceneToFile("res://scenes/menus.tscn");
 	}
+
 
 
 	[Export] private float MinOllieSwipeDistance = 60f;   // Minimum swipe (pixels) to trigger ollie
